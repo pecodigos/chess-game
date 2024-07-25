@@ -32,8 +32,6 @@ public class Program {
                 System.out.print("Press any key to go back.");
                 sc.nextLine();
             }
-
         }
-
     }
 }
