@@ -37,6 +37,24 @@ public class Program {
                 if (capturedPiece != null) {
                     captured.add(capturedPiece);
                 }
+
+                if (chessMatch.getPromoted() != null) {
+                    System.out.print("Enter piece for promotion (B/N/R/Q): ");
+                    String type = sc.nextLine();
+                    if (type.equals("B")) {
+                        type = "\u2657";
+                    }
+                    else if (type.equals("N")) {
+                        type = "\u2658";
+                    }
+                    else if (type.equals("R")) {
+                        type = "\u2656";
+                    }
+                    else if (type.equals("Q")) {
+                        type = "\u2655";
+                    }
+                    chessMatch.replacePromotedPiece(type);
+                }
             }
             catch (ChessException | InputMismatchException e) {
                 System.out.println(e.getMessage());
