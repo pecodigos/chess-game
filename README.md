@@ -26,7 +26,8 @@ Then, if you press enter, it will be the next player's turn (black, in this exam
 - Special moves, such as "En Passant" and "Castling";
 - Pawn promotion;
 - Turn counting;
-- Possible moves colored in blue.
+- Possible moves colored in blue;
+- Unicode chess symbols for pieces.
 
 
 
